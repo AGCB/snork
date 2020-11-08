@@ -1,3 +1,31 @@
 .App {
-  color: limegreen;
+  border: 2px solid cyan;
+  height: 95vh;
+  .title {
+    font-size: 30px;
+    color: blue;
+  }
+  .grid {
+    color: cyan;
+    border: 3px solid red;
+    padding: 10px 0;
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+  .column {
+    display: flex;
+    flex-direction: column;
+    .square {
+      width: 7vw;
+      height: 7vw;
+      max-height: 72px;
+      max-width: 72px;
+      border: 1px dotted rgba(0,255,255,.4);
+
+      &.active {
+        background-color: darkblue;
+      }
+    }
+  }
+  }
 }
