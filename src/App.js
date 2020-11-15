@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import './App.scss';
 
-function setInitialGrid(size) {
+export function setInitialGrid(size) {
   let output = [];
   for(let x = 0; x < size; x++) {
     let col = [];
@@ -31,7 +31,7 @@ function Square({ squareData, snork, setSnork }) {
         })
       }
       onClick={e => {
-        console.log(squareData);
+        // console.log(squareData);
       }}
       >
     </div>
@@ -65,7 +65,6 @@ function App() {
 
   useEffect(()=>{
     function handleKeyPress(e) {
-      console.log('in a key press');
       const offsets = {
         'ArrowUp': [0, -1],
         'ArrowRight': [1, 0],
