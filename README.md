@@ -16,3 +16,13 @@
 - PAUSE_GAME
 - GAME_OVER
 - MOVE FOOD
+
+
+### steps to redux hello world.
+- import libs redux and react redux.
+- create store
+- create reducer combiner.
+  - game state toggle reducer.
+  - gridStats reducer.
+- create actions ( follow action names above )
+- test fire actions on button clicks.
