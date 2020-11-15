@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import './App.scss';
 
-function setInitialGrid(size) {
+export function setInitialGrid(size) {
   let output = [];
   for(let x = 0; x < size; x++) {
     let col = [];
